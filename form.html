@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>titile</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@20.3.0/dist/css/suggestions.min.css" rel="stylesheet" />
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-sm navbar-dark px-3" style="background-color: rgb(30, 24, 49);">
+       <a class="navbar-brand" href="#">Форма</a>
+       <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+           aria-expanded="false" aria-label="Toggle navigation"></button>
+       <div class="collapse navbar-collapse d-flex justify-content-between" id="collapsibleNavId">
+           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+               <li class="nav-item active">
+                   <a class="nav-link" href="#"> Главная</a>
+               </li>
+               <li class="nav-item active">
+                <a class="nav-link" href="#"> Услуги </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> Цены </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> Реклама </a>
+                </li>
+           </ul>
+           <form action="" class="search-form  w-24">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Поиск" aria-label="Example placeholder" aria-describedby="exampleAddon">
+                    <button type="button" class="btn btn-outline-primary">Искать</button>
+                </div>
+           </form>
+       </div>
+   </nav>
+
+   <section class="main py-5">
+       <div class="container">
+           <div class="row">
+                <div class="col-md-6">
+                    <h1 class="h1 mt-4 mb-4">Получите кредит без лишних затрат времени!</h1>
+                    <p class="text mb-4">Мы отправим вашу заявку в 12 разных банков с высоким рейтингом. Банки будут
+                        предлагать вам кредиты, а вам останется только выбрать лучшие из них по условиям.
+                    </p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label class="mb-2" for="fio">Ф.И.О</label>
+                                <input id="fio" class="form-control" placeholder="Иванов Иван Иванович" type="text" name="fio">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="mb-2" for="job">Место работы</label>
+                                <input id="job" class="form-control" placeholder="Например, Ситилинк" type="text" name="job">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="mb-2" for="real-address">Фактический адрес</label>
+                                <input id="real-address" placeholder="Например, Арбат 1" class="form-control address" type="address" name="real-address">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="mb-2" for="passport-data">Кем выдан паспорт</label>
+                                <input id="passport-data" placeholder="Например, отделением УФМС" class="form-control passport-data" type="text" name="passport-data">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label class="mb-2" for="date">Дата рождения</label>
+                                <input id="date" class="form-control" type="date" name="date">
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="mb-2" for="address">Адрес проживания</label>
+                                <input id="address" class="form-control address mb-2" placeholder="Например, Покровка 15" type="address" name="address">
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="mb-2" for="family">Семейное положение</label>
+                                <select id="family" class="form-control" name="family">
+                                    <option>Женат</option>
+                                    <option>Холост</option>
+                                    <option>Замужем</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <button type="submit" class="btn btn-danger mt-4">Отправить</button>
+            </div>
+            <div class="col-md-5 mt-5 offset-md-1 ">
+                <img src="img/credit.jpg" alt="credit" class="mw-100 rounded">
+            </div>
+        </div>
+       </div>
+   </section>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+   <script src="https://cdn.jsdelivr.net/npm/suggestions-jquery@20.3.0/dist/js/jquery.suggestions.min.js"></script>
+   <script src="scripts/settings.js"></script>
+
+</body>
+</html>
